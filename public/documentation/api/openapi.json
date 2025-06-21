@@ -1,0 +1,479 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Simplespot API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://{domain}/api",
+      "description": "Custom domain (user-provided)",
+      "variables": {
+        "domain": {
+          "default": "surf.simplux.africa",
+          "description": "Enter your domain without protocol (e.g., \"api.example.com\")"
+        }
+      }
+    },
+    {
+      "url": "https://surf.simplux.africa/api",
+      "description": "Production environment (default)"
+    }
+  ],
+  "security": [
+    {
+      "BearerAuth": []
+    }
+  ],
+  "paths": {
+    "/login": {
+      "post": {
+        "summary": "Request Authorization",
+        "tags": [
+          "Authentication"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": ""
+                  }
+                },
+                "required": [
+                  "email",
+                  "password"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful login (returns token)",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Sample response": {
+                    "value": "{\n  \"token\": \"201|4pfIYKDNR5ppi50KQ7x8Cagy9O7jZpgzfBvpxFMH6a5f1c09\"\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dashboard": {
+      "get": {
+        "summary": "Get Dashboard Statistics",
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "Dashboard data",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Sample response": {
+                    "value": "{\n  \"system_stats\": {\n    \"os\": \"Linux\",\n    \"cpu_load\": 4.8,\n    \"memory\": {\n      \"total\": 3.32,\n      \"used\": 1.02,\n      \"available\": 2.3,\n      \"usage_percent\": 30.72\n    },\n    \"disk\": {\n      \"total\": 46.32,\n      \"used\": 12.45,\n      \"free\": 33.87,\n      \"usage_percent\": 26.88\n    }\n  },\n  \"voucher_stats\": {\n    \"active\": 5,\n    \"new\": 3,\n    \"used\": 2\n  },\n  \"session_stats\": {\n    \"online_sessions\": 0,\n    \"active_sessions\": []\n  },\n  \"data_usage\": {\n    \"total\": \"0\",\n    \"upload\": \"0\",\n    \"download\": \"0\"\n  },\n  \"revenue_stats\": {\n    \"today\": 0,\n    \"month\": 2,\n    \"formatted\": {\n      \"today\": \"0.00\",\n      \"month\": \"2.00\"\n    }\n  },\n  \"location_stats\": [\n    {\n      \"id\": 1,\n      \"name\": \"Wangige\",\n      \"coordinates\": {\n        \"latitude\": -1.2199335,\n        \"longitude\": 36.7130199\n      },\n      \"online_users\": 0,\n      \"revenue_today\": 0,\n      \"revenue_month\": 2\n    },\n    {\n      \"id\": 2,\n      \"name\": \"Gachie\",\n      \"coordinates\": {\n        \"latitude\": -1.21676,\n        \"longitude\": 36.766169\n      },\n      \"online_users\": 0,\n      \"revenue_today\": 0,\n      \"revenue_month\": 0\n    },\n    {\n      \"id\": 3,\n      \"name\": \"Uthiru\",\n      \"coordinates\": {\n        \"latitude\": -1.2606817,\n        \"longitude\": 36.7112127\n      },\n      \"online_users\": 0,\n      \"revenue_today\": 0,\n      \"revenue_month\": 0\n    },\n    {\n      \"id\": 4,\n      \"name\": \"Kikuyu\",\n      \"coordinates\": {\n        \"latitude\": -1.2438971,\n        \"longitude\": 36.6645832\n      },\n      \"online_users\": 0,\n      \"revenue_today\": 0,\n      \"revenue_month\": 0\n    }\n  ],\n  \"load_time\": 0.24\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/locations": {
+      "get": {
+        "summary": "Get all locations",
+        "tags": [
+          "Locations"
+        ],
+        "responses": {
+          "200": {
+            "description": "List of locations",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Sample response": {
+                    "value": "[\n  {\n    \"id\": 1,\n    \"name\": \"Wangige\",\n    \"coordinates\": {\n      \"latitude\": -1.2199335,\n      \"longitude\": 36.7130199\n    },\n    \"online_users\": 0,\n    \"revenue_today\": 0,\n    \"revenue_month\": 2\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Gachie\",\n    \"coordinates\": {\n      \"latitude\": -1.21676,\n      \"longitude\": 36.766169\n    },\n    \"online_users\": 0,\n    \"revenue_today\": 0,\n    \"revenue_month\": 0\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Uthiru\",\n    \"coordinates\": {\n      \"latitude\": -1.2606817,\n      \"longitude\": 36.7112127\n    },\n    \"online_users\": 0,\n    \"revenue_today\": 0,\n    \"revenue_month\": 0\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Kikuyu\",\n    \"coordinates\": {\n      \"latitude\": -1.2438971,\n      \"longitude\": 36.6645832\n    },\n    \"online_users\": 0,\n    \"revenue_today\": 0,\n    \"revenue_month\": 0\n  }\n]"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/locations/{id}/stats": {
+      "get": {
+        "summary": "Get location statistics",
+        "tags": [
+          "Locations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Location stats",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "sample response": {
+                    "value": "{\n  \"location\": {\n    \"id\": 1,\n    \"name\": \"Wangige\",\n    \"coordinates\": {\n      \"latitude\": -1.2199335,\n      \"longitude\": 36.7130199\n    }\n  },\n  \"vouchers\": {\n    \"total\": 19,\n    \"active\": 5,\n    \"used\": 2,\n    \"expired\": 14,\n    \"new\": 3\n  },\n  \"sessions\": {\n    \"online\": 0\n  },\n  \"data_usage\": {\n    \"today\": {\n      \"upload\": \"0\",\n      \"download\": \"0\",\n      \"total\": \"0\"\n    },\n    \"this_month\": {\n      \"upload\": \"93.59 MB\",\n      \"download\": \"382.44 MB\"\n    }\n  },\n  \"revenue\": {\n    \"today\": 0,\n    \"this_week\": 4,\n    \"this_month\": 2,\n    \"all_time\": 32\n  },\n  \"devices\": 20\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/locations/{id}/sessions": {
+      "get": {
+        "summary": "Get active sessions per location",
+        "tags": [
+          "Locations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Active sessions",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Sample Sessions": {
+                    "value": "{\n  \"current_page\": 1,\n  \"data\": [\n    {\n      \"username\": \"DDYFIW\",\n      \"start_time\": \"2025-04-03 14:21:30\",\n      \"session_id\": \"80f0003e\",\n      \"duration\": {\n        \"seconds\": 15,\n        \"human_readable\": \"15 seconds\"\n      },\n      \"data_usage\": {\n        \"upload\": \"0\",\n        \"download\": \"0\",\n        \"total\": \"0\",\n        \"raw\": {\n          \"upload_bytes\": 0,\n          \"download_bytes\": 0,\n          \"total_bytes\": 0\n        }\n      },\n      \"network\": {\n        \"ip_address\": \"192.168.70.254\",\n        \"mac_address\": \"52:F2:B4:AB:A5:88\"\n      }\n    }\n  ],\n  \"first_page_url\": \"https://surf.simplux.africa/api/locations/1/sessions?page=1\",\n  \"from\": 1,\n  \"last_page\": 1,\n  \"last_page_url\": \"https://surf.simplux.africa/api/locations/1/sessions?page=1\",\n  \"links\": [\n    {\n      \"url\": null,\n      \"label\": \"&laquo; Previous\",\n      \"active\": false\n    },\n    {\n      \"url\": \"https://surf.simplux.africa/api/locations/1/sessions?page=1\",\n      \"label\": \"1\",\n      \"active\": true\n    },\n    {\n      \"url\": null,\n      \"label\": \"Next &raquo;\",\n      \"active\": false\n    }\n  ],\n  \"next_page_url\": null,\n  \"path\": \"https://surf.simplux.africa/api/locations/1/sessions\",\n  \"per_page\": 15,\n  \"prev_page_url\": null,\n  \"to\": 1,\n  \"total\": 1\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/vouchers": {
+      "get": {
+        "summary": "Get all vouchers",
+        "tags": [
+          "Vouchers"
+        ],
+        "responses": {
+          "200": {
+            "description": "List of vouchers",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Sample Response": {
+                    "value": "{\n  \"success\": true,\n  \"data\": {\n    \"current_page\": 1,\n    \"data\": [\n      {\n        \"id\": 32,\n        \"code\": \"SPYJ8Y\",\n        \"title\": \"2 GB\",\n        \"status\": \"active\",\n        \"type\": \"Data Based\",\n        \"location\": {\n          \"id\": 1,\n          \"name\": \"Wangige\"\n        },\n        \"expiration\": null,\n        \"phone\": null,\n        \"speed_limit\": \"10 Mbps\",\n        \"data_limit\": \"2.00 GB\",\n        \"usage\": {\n          \"progress\": {\n            \"percentage\": 100,\n            \"color\": \"success\",\n            \"width\": \"100%\"\n          },\n          \"used\": \"0\",\n          \"remaining\": \"2.00 GB\",\n          \"percentage_used\": 0\n        },\n        \"created_at\": \"2025-04-03 14:21:20\",\n        \"updated_at\": \"2025-04-03 14:21:20\"\n      },\n      {\n        \"id\": 12,\n        \"code\": \"5GAGEY\",\n        \"title\": \"30 Minutes\",\n        \"status\": \"expired\",\n        \"type\": \"Time Based\",\n        \"location\": {\n          \"id\": 1,\n          \"name\": \"Wangige\"\n        },\n        \"expiration\": \"2025-03-31 14:35:30\",\n        \"phone\": null,\n        \"speed_limit\": \"5 Mbps\",\n        \"data_limit\": null,\n        \"usage\": {\n          \"progress\": {\n            \"percentage\": 0,\n            \"color\": \"danger\",\n            \"width\": \"0%\"\n          }\n        },\n        \"created_at\": \"2025-03-31 14:05:30\",\n        \"updated_at\": \"2025-03-31 14:36:02\"\n      }\n    ],\n    \"first_page_url\": \"https://surf.simplux.africa/api/vouchers?page=1\",\n    \"from\": 1,\n    \"last_page\": 1,\n    \"last_page_url\": \"https://surf.simplux.africa/api/vouchers?page=1\",\n    \"links\": [\n      {\n        \"url\": null,\n        \"label\": \"&laquo; Previous\",\n        \"active\": false\n      },\n      {\n        \"url\": \"https://surf.simplux.africa/api/vouchers?page=1\",\n        \"label\": \"1\",\n        \"active\": true\n      },\n      {\n        \"url\": null,\n        \"label\": \"Next &raquo;\",\n        \"active\": false\n      }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"https://surf.simplux.africa/api/vouchers\",\n    \"per_page\": 25,\n    \"prev_page_url\": null,\n    \"to\": 21,\n    \"total\": 21\n  },\n  \"meta\": {\n    \"total_vouchers\": 21,\n    \"current_page\": 1\n  }\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create vouchers",
+        "tags": [
+          "Vouchers"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "plan_id": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "num_vouchers": {
+                    "type": "integer",
+                    "example": 2
+                  },
+                  "location_id": {
+                    "type": "integer",
+                    "example": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Vouchers created",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Sample response": {
+                    "value": "{\n  \"success\": true,\n  \"message\": \"Vouchers created successfully.\",\n  \"data\": {\n    \"vouchers\": [\n      \"KPVLE1\",\n      \"7B1YTF\"\n    ],\n    \"count\": 2,\n    \"location_id\": 1,\n    \"plan_id\": 1\n  }\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/vouchers/location/{id}": {
+      "get": {
+        "summary": "Get vouchers per location",
+        "tags": [
+          "Vouchers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Vouchers for location",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Example Response": {
+                    "value": "{\n  \"success\": true,\n  \"data\": {\n    \"current_page\": 1,\n    \"data\": [\n      {\n        \"id\": 34,\n        \"code\": \"7B1YTF\",\n        \"title\": \"30 Minutes\",\n        \"status\": \"active\",\n        \"type\": \"Time Based\",\n        \"location\": {\n          \"id\": 1,\n          \"name\": \"Wangige\"\n        },\n        \"expiration\": \"2025-04-03 14:54:17\",\n        \"phone\": null,\n        \"speed_limit\": \"5 Mbps\",\n        \"data_limit\": null,\n        \"usage\": {\n          \"progress\": {\n            \"percentage\": 96,\n            \"color\": \"success\",\n            \"width\": \"96%\"\n          }\n        },\n        \"created_at\": \"2025-04-03 14:24:17\",\n        \"updated_at\": \"2025-04-03 14:24:17\"\n      },\n      {\n        \"id\": 12,\n        \"code\": \"5GAGEY\",\n        \"title\": \"30 Minutes\",\n        \"status\": \"expired\",\n        \"type\": \"Time Based\",\n        \"location\": {\n          \"id\": 1,\n          \"name\": \"Wangige\"\n        },\n        \"expiration\": \"2025-03-31 14:35:30\",\n        \"phone\": null,\n        \"speed_limit\": \"5 Mbps\",\n        \"data_limit\": null,\n        \"usage\": {\n          \"progress\": {\n            \"percentage\": 0,\n            \"color\": \"danger\",\n            \"width\": \"0%\"\n          }\n        },\n        \"created_at\": \"2025-03-31 14:05:30\",\n        \"updated_at\": \"2025-03-31 14:36:02\"\n      }\n    ],\n    \"first_page_url\": \"https://surf.simplux.africa/api/vouchers/location/1?page=1\",\n    \"from\": 1,\n    \"last_page\": 1,\n    \"last_page_url\": \"https://surf.simplux.africa/api/vouchers/location/1?page=1\",\n    \"links\": [\n      {\n        \"url\": null,\n        \"label\": \"&laquo; Previous\",\n        \"active\": false\n      },\n      {\n        \"url\": \"https://surf.simplux.africa/api/vouchers/location/1?page=1\",\n        \"label\": \"1\",\n        \"active\": true\n      },\n      {\n        \"url\": null,\n        \"label\": \"Next &raquo;\",\n        \"active\": false\n      }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"https://surf.simplux.africa/api/vouchers/location/1\",\n    \"per_page\": 25,\n    \"prev_page_url\": null,\n    \"to\": 22,\n    \"total\": 22\n  },\n  \"meta\": {\n    \"total_vouchers\": 22,\n    \"current_page\": 1,\n    \"location\": {\n      \"id\": 1,\n      \"name\": \"Wangige\"\n    }\n  }\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/vouchers/search": {
+      "get": {
+        "summary": "Search for vouchers",
+        "tags": [
+          "Vouchers"
+        ],
+        "parameters": [
+          {
+            "name": "search",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "15N9BU"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Search results",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Sample Response": {
+                    "value": "{\n  \"success\": true,\n  \"data\": {\n    \"current_page\": 1,\n    \"data\": [\n      {\n        \"id\": 12,\n        \"code\": \"5GAGEY\",\n        \"title\": \"30 Minutes\",\n        \"status\": \"expired\",\n        \"type\": \"Time Based\",\n        \"location\": {\n          \"id\": 1,\n          \"name\": \"Wangige\"\n        },\n        \"expiration\": \"2025-03-31 14:35:30\",\n        \"phone\": null,\n        \"speed_limit\": \"5 Mbps\",\n        \"data_limit\": null,\n        \"usage\": {\n          \"progress\": {\n            \"percentage\": 0,\n            \"color\": \"danger\",\n            \"width\": \"0%\"\n          }\n        },\n        \"created_at\": \"2025-03-31 14:05:30\",\n        \"updated_at\": \"2025-03-31 14:36:02\"\n      }\n    ],\n    \"first_page_url\": \"https://domain.com/api/vouchers/search?page=1\",\n    \"from\": 1,\n    \"last_page\": 1,\n    \"last_page_url\": \"https://domain.com/api/vouchers/search?page=1\",\n    \"links\": [\n      {\n        \"url\": null,\n        \"label\": \"&laquo; Previous\",\n        \"active\": false\n      },\n      {\n        \"url\": \"https://domain.com/api/vouchers/search?page=1\",\n        \"label\": \"1\",\n        \"active\": true\n      },\n      {\n        \"url\": null,\n        \"label\": \"Next &raquo;\",\n        \"active\": false\n      }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"https://domain.com/api/vouchers/search\",\n    \"per_page\": 25,\n    \"prev_page_url\": null,\n    \"to\": 1,\n    \"total\": 1\n  },\n  \"meta\": {\n    \"total_vouchers\": 1,\n    \"current_page\": 1,\n    \"applied_filters\": {\n      \"search\": \"5GAGEY\"\n    }\n  }\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/vouchers/send": {
+      "post": {
+        "summary": "Send voucher to phone number",
+        "tags": [
+          "Vouchers"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "voucher_id": {
+                    "type": "integer",
+                    "example": 8
+                  },
+                  "phone": {
+                    "type": "string",
+                    "example": "254700000000"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Voucher sent",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Sample response": {
+                    "value": "{\n  \"success\": true,\n  \"message\": \"Message sent successfully\",\n  \"data\": {\n    \"voucher_id\": 12,\n    \"code\": \"5GAGEY\",\n    \"phone\": \"+254700000000\",\n    \"gateway\": \"celcom\",\n    \"contact_id\": null\n  }\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/partner/earnings": {
+      "get": {
+        "summary": "View partner earnings",
+        "tags": [
+          "Partner"
+        ],
+        "responses": {
+          "200": {
+            "description": "Earnings data",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Sample Response": {
+                    "value": "{\n  \"success\": true,\n  \"data\": {\n    \"total_revenue_all_locations\": 2,\n    \"earnings_breakdown\": [\n      {\n        \"location_id\": 1,\n        \"location_name\": \"Wangige\",\n        \"total_revenue\": 2,\n        \"my_percentage\": 10,\n        \"my_earning\": 0.2\n      }\n    ],\n    \"period\": {\n      \"start\": \"2025-04-01 00:00:00\",\n      \"end\": \"2025-04-30 23:59:59\",\n      \"filter\": \"month\"\n    },\n    \"total_earnings\": 0.2\n  }\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/partner/payouts": {
+      "get": {
+        "summary": "View commission payouts",
+        "tags": [
+          "Partner"
+        ],
+        "responses": {
+          "200": {
+            "description": "Payouts data",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Sample Response": {
+                    "value": "{\n  \"success\": true,\n  \"data\": {\n    \"payouts\": [\n      {\n        \"location_id\": 1,\n        \"location_name\": \"Wangige\",\n        \"total_revenue\": 2,\n        \"partners\": [\n          {\n            \"partner_id\": 3,\n            \"partner_name\": \"John Doe1\",\n            \"phone\": \"254700000000\",\n            \"commission_percentage\": 20,\n            \"earning\": 0.4\n          },\n          {\n            \"partner_id\": 4,\n            \"partner_name\": \"John Doe2\",\n            \"phone\": \"254700000000\",\n            \"commission_percentage\": 10,\n            \"earning\": 0.2\n          }\n        ],\n        \"my_earning\": 1.4\n      }\n    ],\n    \"totals\": {\n      \"all_locations_revenue\": 2,\n      \"all_partners_commission\": 0.6000000000000001,\n      \"total_revenue\": 1.4\n    },\n    \"period\": {\n      \"start\": \"2025-04-01 00:00:00\",\n      \"end\": \"2025-04-30 23:59:59\",\n      \"filter\": \"month\"\n    }\n  }\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sms-balance": {
+      "get": {
+        "summary": "Check SMS balance",
+        "tags": [
+          "SMS"
+        ],
+        "responses": {
+          "200": {
+            "description": "SMS balance",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Sample Response": {
+                    "value": "{\n  \"value\": 212,\n  \"units\": \"KES\",\n  \"formatted\": \"SMS 212\",\n  \"gateway\": \"Celcom\",\n  \"gateway_display_name\": \"Celcom\"\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/system": {
+      "get": {
+        "summary": "System info",
+        "tags": [
+          "System"
+        ],
+        "responses": {
+          "200": {
+            "description": "System data",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Success Response": {
+                    "value": "{\n  \"company_name\": \"Sample Company\",\n  \"logo\": \"https://domain.com/images/logo.png\",\n  \"company_email\": null,\n  \"company_phone\": null\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/user": {
+      "get": {
+        "summary": "Get user data",
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "User data",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Success Response": {
+                    "value": "{\n  \"id\": 4,\n  \"firstname\": \"Sample\",\n  \"lastname\": \"User\",\n  \"username\": \"sample\",\n  \"email\": \"sampleuser@gmail.com\",\n  \"user_type\": \"partner\",\n  \"commission_percentage\": \"10.00\",\n  \"location\": null,\n  \"latitude\": null,\n  \"longitude\": null,\n  \"phone\": \"254700000000\",\n  \"category\": null,\n  \"billingType\": null,\n  \"birthday\": null,\n  \"identification\": null,\n  \"avatar\": \"https://domain.com/images/avatars/logo.jpg\",\n  \"type\": null,\n  \"info\": null,\n  \"email_verified_at\": null,\n  \"google2fa_secret\": \"GHGVCD25DVDL6SBQ\",\n  \"google2fa_enabled\": 0,\n  \"google2fa_verified_at\": null,\n  \"recovery_codes\": [],\n  \"created_at\": \"2025-03-25T21:44:05.000000Z\",\n  \"updated_at\": \"2025-04-01T22:01:54.000000Z\",\n  \"roles\": [\n    \"admin\"\n  ],\n  \"permissions\": [\n    \"view dashboard\",\n    \"view locations\",\n    \"create location\",\n    \"edit location\",\n    \"delete location\",\n    \"manage location preferences\",\n    \"view nas\",\n    \"create nas\",\n    \"update nas\",\n    \"delete nas\",\n    \"configure nas\",\n    \"view plans\",\n    \"create plans\",\n    \"update plans\",\n    \"delete plans\",\n    \"view vouchers\",\n    \"create vouchers\",\n    \"update vouchers\",\n    \"delete vouchers\",\n    \"compensate vouchers\",\n    \"send vouchers\",\n    \"import vouchers\",\n    \"export vouchers\",\n    \"create phonebook\",\n    \"update phonebook\",\n    \"delete phonebook\",\n    \"view phonebook\",\n    \"import phonebook\",\n    \"export phonebook\",\n    \"send sms phonebook\",\n    \"assign location phonebook\",\n    \"bulk delete phonebook\",\n    \"manage payouts\",\n    \"view revenue\",\n    \"view earnings\",\n    \"download template\",\n    \"view admins\",\n    \"create admin\",\n    \"edit admin\",\n    \"delete admin\",\n    \"manage roles\",\n    \"manage permissions\",\n    \"view logs\",\n    \"reset roles\"\n  ]\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}
