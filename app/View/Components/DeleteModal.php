@@ -1,30 +1,24 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<?php
+
+namespace App\View\Components;
+
+use Illuminate\View\Component;
+
+class DeleteModal extends Component
+{
+    public $route;
+    public $message;
+    public $method;
+
+    public function __construct($route, $message = 'Deleting this will remove all related data.', $method = 'delete')
+    {
+        $this->route = $route;
+        $this->message = $message;
+        $this->method = $method;
+    }
+
+    public function render()
+    {
+        return view('components.delete-modal');
+    }
+}

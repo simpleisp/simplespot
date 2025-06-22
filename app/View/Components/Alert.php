@@ -1,29 +1,36 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<?php
+
+namespace App\View\Components;
+
+use Illuminate\View\Component;
+
+class Alert extends Component
+{
+    public $type;
+    public $message;
+    public $icon;
+    public $title;
+
+    /**
+     * Create a new component instance.
+     *
+     * @return void
+     */
+    public function __construct($type, $message, $icon = null, $title = null)
+    {
+        $this->type = $type;
+        $this->message = $message;
+        $this->icon = $icon;
+        $this->title = $title;
+    }
+
+    /**
+     * Get the view / contents that represent the component.
+     *
+     * @return \Illuminate\View\View|string
+     */
+    public function render()
+    {
+        return view('components.alert');
+    }
+}
