@@ -1,42 +1,52 @@
-!odMbo!
-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
+<div class="modal fade flip" id="deleteItem" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-5 text-center">
+                <lord-icon 
+                    src="https://cdn.lordicon.com/gsqxdxog.json" 
+                    trigger="loop" 
+                    colors="primary:#405189,secondary:#f06548" 
+                    style="width: 90px; height: 90px;">
+                </lord-icon>
+
+                <div class="mt-4 text-center">
+                    <h4>You are about to delete <span class="modal-title"></span>!</h4>
+                    <p class="text-muted fs-15 mb-4">{{ $message }}</p>
+
+                    <div class="hstack gap-2 justify-content-center remove">
+                        <!-- Close Button -->
+                        <button class="btn light btn-rounded btn-info" data-bs-dismiss="modal">
+                            <i class="ri-close-line me-1 align-middle"></i> Close
+                        </button>
+
+                        <!-- Form with dynamic method -->
+                        <form action="{{ $route }}" method="POST">
+                            @csrf
+                            @if($method !== 'post')
+                                @method($method)
+                            @endif
+                            <input type="hidden" name="id" id="delete-id" />
+                            <button type="submit" class="btn light btn-rounded btn-danger">
+                                <i class="fa fa-trash me-1"></i> Yes, delete
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        $('#deleteItem').on('show.bs.modal', function(event) {
+            var button = $(event.relatedTarget); // Button that triggered the modal
+            var title = button.data('title');    // Extract the title
+            var id = button.data('id');          // Extract the ID
+
+            var modal = $(this);
+            modal.find('.modal-title').text(title);
+            modal.find('#delete-id').val(id);
+        });
+    });
+</script>

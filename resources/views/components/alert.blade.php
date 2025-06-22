@@ -1,13 +1,14 @@
-!odMbo!
-P03ipnvMNarrz5WuKnMP+m4000000000G+CDu0klGPBt8hgxf2kSHYY7HJifOGF/eAqqatHXOP4L
-uXsXMAAu1DnUvlsO0YQUpTAdyaOSrt1HWUo0MDWlhOrErwxOlosST5yXvY3QntTa/U1A/pgnts/c
-NZlhb6yq49HIVYT2klDd9djmzgTPB/UkXoYnkjmrvetVxuEQ8I6SbQNWx3buUUvmIqF613quXaOy
-dSg0qqaAtpZFG6/cFZhQ2TbaRwjmSxg7G3qrQ48J3i4guUx2hjF91LrLJbiLzSOtLrCAD3D1A5SC
-ynUOPVivu9PsJBNddVCFb5SvI3V+NVBARkFHOJuHb4FV5lOHzhZ6dq2Rw5h9xowTehLfpnI1wk6p
-5vy++kSfjpExy0JA0OQTJ6WgGKXMPKH9Ucy4CFfXid1IgMfnTEez26kGF3zoY9kzYikEDm93aS/H
-n/+yfqPkp1VM9TINWHk9sRnMDDTTJ61ShZcXYO+mJtV93EeYvlqhnnu2iZ3eut4t+a7g+DUDstlU
-K9+SO+plgc4GuUqkWLefimUD9BxK8KDxNKwjJCWCtAYCwek7BRvqcVYr8R8DBNoepoWc80xnFN73
-w8ydGaGi6zXgqaAER41W2JCDyRzHnF5kKwvgLeclvxp5xJ9YTKoWpP0K0eEwoWIa62kqbiIjqLD8
-HctYZnsx5rpfp8B65DRNyGsC5TgsaVoPtmtIxdTROcfapGruZzfutkM/LX0bistJTzt34rbweWHr
-OHjiE9V7XeKTDG53akt3pKenhy0sVhTG133Lg2SKU+jQceUtE/Tl7wDYJstV6zGWnIu55fp3yIdz
-a7ucxSxV3OHwqtS=
+<div class="alert alert-{{ $type }} left-icon-big alert-dismissible fade show">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+        <span><i class="mdi mdi-btn-close"></i></span>
+    </button>
+    <div class="media">
+        <div class="alert-left-icon-big">
+            <span><i class="{{ $icon }}"></i></span>
+        </div>
+        <div class="media-body">
+            <h5 class="mt-1 mb-2">{{ ucfirst($title ?? ($type == 'success' ? 'Congratulations!' : 'Oops!')) }}</h5>
+            <p class="mb-0">{!! $message !!}</p>
+        </div>
+    </div>
+</div>

@@ -1,13 +1,21 @@
-!odMbo!
-4ZJCbaBwXgojbtZrX2PdZG4000000000eipIM4GJXlXrh0bR9nvyZMgOcvmhxWNdiX63rCC914jX
-fbt0Z6ZMlO4CN6WM7O4ot4bEkmAMANr3KisDjMWiy9BjWHxKkOp/haodt0XRRJHAbPbCghnvpnrJ
-XRz7ToGKJXz5NDHMiOl/AVL+0QvYp8yo3NUPxFMWg4QxH5V8EsqzUuvVDDDsQXyZN2iHwUMdEexU
-Dw4C5nMV4BfbIj8sJTRSATjtEDJlt8YF4lzgtIRzmgaYOE1BwEJ7oGm38acp8clKKfXRe+YULIRC
-aZHSLI2kcI0BzH5JYc7sTfEP2SuOiCymwhQXPFtUndUkf9sPQo+/+mW9l5flBGfwyIjAft+rd6yv
-8oWLx66UJkwX8yWGuo/a9L5I7GL/lcExmUHkAj5Oy7L54TFoW7OWQSzrobywnOsHUM0MUlmdq5rD
-WZPiNantIrcrYfYZe8QwXBTKdX6V1L87ad9nWzxt5sSHsBYqDioim3qBbW0MeJkR0zkB+DWa7Y5y
-QWnv4DHt5oM/H7PGzYO3R1mpyZanss8lWxe5oBOMokZKJsBTNByRCnaGb1UoF1Xt/wbAX/PHD3fP
-0pOmhtnmEXdC/kLeHNekodn8WKyCVBunN+jkx6Mj+9l2iqdqmKIisNtLAK/bO+w84apAyl+8GGG+
-otQY1TQ3nQ6xcMSuR2UHAsLAW8A3QVycFBYFbNFMrZETk8QCOnmfAotUuc42DhzD/bUXQef9QlLD
-MDHfH4hAP1zgkluubWwxw0glfIBd5GuDoWRSf6QcUKd+QjJf3x8gtT8n/dL/YEeWaYNzm21VJSTS
-6qgjriEJioO320APPu0jfflWhm9uehHJ/ZIgReXLsr9cMIVC
+<div class="d-flex justify-content-between w-100 mt-4">
+    <!-- Cancel Button -->
+    <div>
+        <a href="{{ $cancelRoute }}" class="btn light btn-rounded btn-dark">
+            <span class="btn-icon-start text-muted">
+                <i class="las la-times"></i>
+            </span>
+            Cancel
+        </a>
+    </div>
+
+    <!-- Save Button -->
+    <div>
+        <button type="submit" class="btn light btn-rounded btn-primary">
+            <span class="btn-icon-start text-primary">
+                <i class="{{ $saveIcon }}"></i>
+            </span>
+            {{ $saveText }}
+        </button>
+    </div>
+</div>
