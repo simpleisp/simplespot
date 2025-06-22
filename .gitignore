@@ -3,7 +3,7 @@
 /public/bash
 /public/easy-rsa
 /public/hotspot
-/public/images
+# /public/images
 /public/phpmyadmin
 /public/storage
 /storage/*.key
