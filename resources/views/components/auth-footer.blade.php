@@ -1,30 +1,22 @@
-<!-- Footer -->
-<footer class="footer bg-light py-4 border-top">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="text-center small text-muted">
-                    <p class="mb-1">
-                        &copy; <span id="currentYear">{{ now()->year }}</span>
-
-                        @if (hasBrandingLicense() && setting('company'))
-                            {{ setting('company') }}
-                        @else
-                            SimpleSpot. Designed & developed by 
-                            <a href="https://simplux.africa" target="_blank">SIMPLUX</a>
-                        @endif
-                    </p>
-
-                    @unless (hasBrandingLicense())
-                        <p class="mb-0">
-                            <span class="badge bg-success-subtle text-success fw-medium">
-                                Version {{ appVersion() }}
-                            </span>
-                        </p>
-                    @endunless
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- End Footer -->
+!odMbo!
+XbHhY9Nd6Ux3dSnb+yINT04000000000/Mh0FK98t8+EWmy23h11gU+R8Zp6Ad9HUjLkRbfwZ8zp
+r9pC22O1BY3jz7LXhnoKJow2ozgTlISE/IMQl/5QrRhaOFNqSxxOfXEqOLN4A9no28QTYsbZsV0Z
+1R/5MQgo4cqxmT3KM6X/v6k9KByOwBA4rm4YQnN5ETwmzH/wk+DO69wzJ2eJhYPISOeCiy0y7ZUf
+G2J7HBoN4hK8mpMc6PC/AJSxF1uAaIkB+TxRQ5dQZaBWqCMmSPAOEfKs5GLM0uasFoHfNh2accDn
+2SBRjwbAnpEWsx9rKL1snIXTa2H6dN1cZfviU4T4B+UCnJiKDfXsyNji6cgk1fU1lCkutrfQ6NCT
+92rPHAt6Ap4ooz6vntUT1f5lSApfwPFUMxZiCGZpA6WLHCq1nxsb6XGsoq6Q9lWueNcbGp9DPSfK
+7MrRsyJvfQWfrjHxRsjpIRNdMD2lW5X+tR3YyqZnyb2IXr/+Hx3PIo1orKYVRt1A4xone5nlxVZ3
+wxfRUh4vJQstLKpu1RqiZYyY+4JrlO5/lUG95aCXDT7aJYocwRi8Ri2E8w4FiPlwT5X8b05y2PBn
+hgL2i4ElVTKbSo9KwT9r7zXaOdBuv0vwWru7msKF1SlqO3SHtQ9AiNTem3AV+mo9N2Xi81yuwEiG
+NqUhwTGTQyPBJlu9mlxnorwAB47LTjeC+wufpWyEbInxsoFmdzndVIr3aZHERNMQc0k86oLM2kEn
+HeXa68md2YrLUcMkeMVpcJBMTJvcmM/gfK4ZJPgjV+r4ZZ65lefvAy9oqw8/fuEFsNL97P6RS1zs
+VzCUB+NfTGXXOTmMT+QsLUidS1bHjTRySeyDJIcp1B7DDFoYf3fkDlHbviT1jVFu7L0iK7bQg6mf
+TPpMHgvXQPU/Zwh04TFgczjWvfYVELmOy2p01OCp70OE6vd1BnoY5N/lvBzrY8eBxXcKsd89FlJI
+akyby1tmmgdghHPnK8Ec5LKqC6gjzSk2qkQt+unX/p9rlOMdk5g6qt2OYNdkgAM63wEdgNMSu4Oy
+NQtYSMSMlS6yCNAlzN/GDUUIltk3jaMk6wQeO8TUxHYiF8ME7Fcj5MCaNNuCaFkt/Me36StrP7N6
+udqtdFvaPqlDIPPIpZYXrVUPqo3ggWoSD0s6RQi/K32vqpl2XfFviswY8KGiM2qnvPdblhsQFpN5
+tDSWX44Ff9/zU7M9Ccz5DknA0MP4JcB3xkzHSQc3Q/NxViWFwZIgksaneCkZ8DBOsmZYuKGNdtCT
+gPBjrrgM+R21kUaw86jRFxFoH3XRjwpzxvKkTcpMTe+XDLp1TZPLlk2Bd+Hs4c9yq6yJ901qn0F2
+U8fwmH5u7N/rNHeTBSeFq6r0hQM6cIxWs8sdE5jU8XFlxT1HxXzQhDRaeNg7UaIB1d1Y3ckE405e
+bFBaTkjfE9bReBW3AbKL9dIfnwtLlftW9oX7lr3WtXI+zGflXmNDvAivz8zn0oyAXMdiG+TXWIoW
+e5N5JsNCfX2cZqCaq0yayirK/KbLOvAJKE01oaimPTxXNzSc2eHdkaunsQ2YEpCQ0HSBzRPBgZGd

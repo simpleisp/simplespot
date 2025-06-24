@@ -9,7 +9,6 @@
         "africastalking/africastalking": "^3.0",
         "anlutro/l4-settings": "^1.2",
         "barryvdh/laravel-dompdf": "^2.0",
-        "calebporzio/parental": "^1.0",
         "darkaonline/l5-swagger": "^8.6",
         "doctrine/dbal": "^3.0",
         "evilfreelancer/routeros-api-php": "^1.5",
@@ -25,7 +24,6 @@
         "maatwebsite/excel": "^3.1",
         "markrogoyski/ipv4-subnet-calculator": "^4.0",
         "nesbot/carbon": "^2.62",
-        "paranic/openvpn": "^1.0",
         "pavel-mironchik/laravel-backup-panel": "^2.2",
         "php-imap/php-imap": "^2.0",
         "pragmarx/google2fa-laravel": "^2.2",
@@ -33,7 +31,6 @@
         "simplesoftwareio/simple-qrcode": "^4.2",
         "spatie/laravel-activitylog": "^4.0",
         "spatie/laravel-permission": "^6.16",
-        "spatie/laravel-tags": "^4.0",
         "zanysoft/laravel-zip": "^2.0"
     },
     "require-dev": {

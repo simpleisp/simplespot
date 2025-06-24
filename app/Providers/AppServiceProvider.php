@@ -1,61 +1,44 @@
-<?php
-
-namespace App\Providers;
-
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Support\Facades\Validator;
-use App\Http\ViewComposers\SupportComposer;
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Str;
-use anlutro\LaravelSettings\Facade as Setting;
-use Illuminate\Support\Facades\View;
-
-class AppServiceProvider extends ServiceProvider
-{
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
-    }
-
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        Schema::defaultStringLength(191);
-
-        try {
-            if (Schema::hasTable('settings')) {
-                if (!Setting::has('SECURITY_TOKEN')) {
-                    Setting::set('SECURITY_TOKEN', Str::random(32));
-                    Setting::save();
-                }
-            }
-        } catch (\Throwable $e) {
-            // Log it for visibility or ignore silently
-            // \Log::info('Skipping settings check: ' . $e->getMessage());
-        }
-
-        Gate::before(function ($user, $ability) {
-            return $user->hasRole('super-admin') ? true : null;
-        });
-
-        view()->composer('*', SupportComposer::class);
-
-        Config::set('app.backupCode', '1234567');
-
-        // if (!app()->runningInConsole() && !hasBrandingLicense() && !brandingIsPresent()) {
-        //     abort(511, 'Branding has been removed. Please restore Simplux credits or upgrade your license to remove branding.');
-        // }
-    }
-
-}
+<?php //002cd
+if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
+?>
+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
+b5gfh1LBeioCjnqAaBu=

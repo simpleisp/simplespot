@@ -1,26 +1,16 @@
-<!-- Footer Section -->
-<div class="plus-box text-center">
-    @if (hasBrandingLicense())
-    <p class="fs-14 font-w600 mb-2">
-            {{ companyName() }} <br>
-            Manage Your Hotspot <br>
-            System Efficiently
-    </p>
-    @else
-    <p class="fs-14 font-w600 mb-2">
-            Simplespot. <br>
-            Manage Your Hotspot <br>
-            System Efficiently
-    </p>
-    @endif
-</div>
-
-<div class="copyright text-center">
-    <p><strong>Hotspot Admin Panel</strong> © <span class="current-year">{{ now()->year }}</span> All Rights Reserved</p>
-
-    @if (hasBrandingLicense())
-    <p class="fs-12">Powered by {{ companyName() }}</p>
-    @else
-    <p class="fs-12">Made with ❤️ by <a href="https://simplux.africa" target="_blank">SIMPLUX</a></p>
-    @endif
-</div>
+!odMbo!
+ItCKJ19JZSTfK4ftR5Lakm4000000000ll+yWCMSpZ/b0snIA6fshCMOhYN7mm+Ob4m7lXqLpknZ
+uPEzsBu3BUlXoZUOVdJ51L/RB3q9saFXav6UtV/gJ6KbPHtvzyokbGLY7RuUqvYMHthDaK8zReJC
+1JfyllNdhtwCuF7G7qnvr6jR7BYSGr1Oa0X3+phfyfaRXgcf1Tz9j80WH+tdqr16DqtfxdS21IPC
+XQY0Dudw+87OnGTaKp/XuJoXZirQt5emEmDsb/SaKOhaNDv+x5XqvffCw1AI5LlvgSr9JNE9em3G
+JNW7q+2KCpYIwWQbZ8nzeoxBa/hifZ0Viw1Yv00jDySzD2dXuBmJg1GDg84+uoGUkoB7vyGi4UHr
+osoX5HmtG0V/6mj11nxeQStqaX2caPZmGGdIrhSwdN8yXa8tFlSgyiRjR+7uDO6WS3VSicSWpCa3
+VTvZX66RIvVsYmJKBI+o41ZgFxoDyxPJfIZ921/O5G5B1bPN0SkMEgQnZ7b0D1OjvFIhefgHmIV0
+zsSiLlrvhYrXfigbd0iZcX+Je6GjoLIsf4MeFuHyF/tBrRGe/a0ClWnjA21BOMQ2+dcMgORTQpbn
+tZoxxzX6Wm3q+Nw5zmK+YVG/AZ6oZ7tJhIcfmko5TTYppxNBLY8eX1vWmhEoAhb9792glItyb0o8
+VX3TcJlHsoVPqd+IOrABLWDzrFtAPkwXVE7wNFllzXa7CLP6DHeDk1I6I+sKuqPbdIMl0wW75bG3
+uNKX1P/h2pefzovHdPMASHE65LgHFhpcC7Ag7d+CyiAmF+DtnfP1xyBVtWjn85w5Gjw5h0W7dL5B
+e2cFSaTqZkVtGUMjYddsFLkbdXMWfe+PbGu/pZZz02omCK7d5FRTO+gPN0R058XdlXYIGNl219wK
+cFzwYj5+HPiY9L9qKCMbOrl4MfthPdjfvY7kOPDVbUCq2Syu8xd4wn1vTklp92ewTz7Mj1c7/f63
+kqxtdwXBtsJwJz2aqeFtuhm1acvQczw0oIHECv7QMIbpecRsgukoBafAKgsIaN4wCNBim60vqdPU
+O/u0wd08hvduHVE/Vh9HM2iCkULLCPuSso3PkaVvQ3yq8CctCit4+P/mphr9TbP+0tF7ntvJxYC=

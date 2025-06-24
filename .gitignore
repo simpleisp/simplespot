@@ -2,10 +2,13 @@
 /public/hot
 /public/bash
 /public/easy-rsa
-/public/hotspot
-# /public/images
 /public/phpmyadmin
+/app/*.lic
 /public/storage
+/storage/app/
+/storage/fonts/
+/storage/framework/
+/storage/logs/
 /storage/*.key
 /vendor
 /phpmyadmin

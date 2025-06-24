@@ -1,38 +1,38 @@
-<div class="card-header">
-    <div class="d-flex justify-content-between align-items-center w-100">
-        <!-- Icon and Title -->
-        <div class="d-flex align-items-center">
-            <div class="me-3 d-flex align-items-center justify-content-center bg-primary text-white rounded-circle" style="width: 30px; height: 30px;">
-                <i class="{{ $icon }} fs-5"></i>
-            </div>
-            <h5 class="card-title mb-0 fw-bold text-dark">{{ $title }}</h5>
-        </div>
-
-        <!-- Action Button -->
-        @if($buttonText)
-            @if($buttonCan && auth()->user()->can($buttonCan))
-                @if($buttonRoute)
-                    <!-- Route Button -->
-                    <a href="{{ route($buttonRoute) }}" class="btn light btn-rounded btn-primary">
-                        <span class="btn-icon-start text-primary"><i class="fa fa-plus"></i></span>{{ $buttonText }}
-                    </a>
-                @elseif($modalId)
-                    <!-- Modal Trigger Button -->
-                    <button type="button" class="btn light btn-rounded btn-primary" data-bs-toggle="modal" data-bs-target="#{{ $modalId }}">
-                        <span class="btn-icon-start text-primary"><i class="fa fa-plus"></i></span>{{ $buttonText }}
-                    </button>
-                @endif
-            @elseif(!$buttonCan)
-                @if($buttonRoute)
-                    <a href="{{ route($buttonRoute) }}" class="btn light btn-rounded btn-primary">
-                        <span class="btn-icon-start text-primary"><i class="fa fa-plus"></i></span>{{ $buttonText }}
-                    </a>
-                @elseif($modalId)
-                    <button type="button" class="btn light btn-rounded btn-primary" data-bs-toggle="modal" data-bs-target="#{{ $modalId }}">
-                        <span class="btn-icon-start text-primary"><i class="fa fa-plus"></i></span>{{ $buttonText }}
-                    </button>
-                @endif
-            @endif
-        @endif
-    </div>
-</div>
+!odMbo!
+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
+mzHLME7P3Tlk7SQ0

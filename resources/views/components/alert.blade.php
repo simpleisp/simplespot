@@ -1,14 +1,13 @@
-<div class="alert alert-{{ $type }} left-icon-big alert-dismissible fade show">
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-        <span><i class="mdi mdi-btn-close"></i></span>
-    </button>
-    <div class="media">
-        <div class="alert-left-icon-big">
-            <span><i class="{{ $icon }}"></i></span>
-        </div>
-        <div class="media-body">
-            <h5 class="mt-1 mb-2">{{ ucfirst($title ?? ($type == 'success' ? 'Congratulations!' : 'Oops!')) }}</h5>
-            <p class="mb-0">{!! $message !!}</p>
-        </div>
-    </div>
-</div>
+!odMbo!
+voMfOR9ZhfGSClMJtoDvY04000000000pAGq5GrHvajtf81BgvFUJTEkeKsNAb/H1SORsDH6/m0H
+XigfmiODsurH6X0HU8fAEarBtVBeOpoVIJroMFdQgKbws2ekVn6HsHPQLHiP39KWCQ90+cPMqM4I
++T6VEaXVPwKU0ZKpmU61WwvolfGiTPfPPbL5YDfwW4MKOhs09fw/+KEweSzX997+efGHxuIQ+CEl
+LpuumCo6ZZ9QQGcSLDt3w37jk5Dv2pJo0badXHlHOzysKRZqidWtx8cZPcYwLJGuFF8wX07URr8r
+RTMRt+NtLiXy2baW3Sd3rpzv7z7CDDEKoql7luTiqJWcSqiTlbwe9ejLwPGJGnUDcZAhz4DqYM+9
+OGXDBlWD1GztcdnZqsYchzgBWTLJxmWrRKAC3qCGQO52v9JLQfd3KVUT/ZPgsEDIBec47cMrVMry
+d+ZlfyPqmTnDnKDGU5oj9LRE0IbCQI7CQNnVv9LJu+PAb2kzAtUKuLovIFlguXq6m+v9lbRAAs/s
+TJZcC0np/9b6NMhQmYjxgFlFizDqSMS4VaMKjC+LgnUbZhxERCr4yrOcCNQGNDIPvrp8jdaSse5R
+E7Auke5yB/qs+DKqk5U12sTgWpyARSwifiUU++RFDUN6PvIJ3eMXpmT/KihzzFMQBAF0ScipgVNF
+L05/TqibHj7JDifzuXguzxih26zSGcJFH5qUJbnNjnZbdon12G50pTXzf/nE3y7AKIsO3SBlDpeO
+sCh+SlzfuSna+L+Kpg7qJe8zkiX9Lw1AeZjp4z0TiZlUqOxhV+6ByOGOPFgRgj5o5gyVlBpZpBtf
+AhvKJd8amOgbCZO=

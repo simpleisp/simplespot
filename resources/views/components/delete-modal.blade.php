@@ -1,52 +1,42 @@
-<div class="modal fade flip" id="deleteItem" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body p-5 text-center">
-                <lord-icon 
-                    src="https://cdn.lordicon.com/gsqxdxog.json" 
-                    trigger="loop" 
-                    colors="primary:#405189,secondary:#f06548" 
-                    style="width: 90px; height: 90px;">
-                </lord-icon>
-
-                <div class="mt-4 text-center">
-                    <h4>You are about to delete <span class="modal-title"></span>!</h4>
-                    <p class="text-muted fs-15 mb-4">{{ $message }}</p>
-
-                    <div class="hstack gap-2 justify-content-center remove">
-                        <!-- Close Button -->
-                        <button class="btn light btn-rounded btn-info" data-bs-dismiss="modal">
-                            <i class="ri-close-line me-1 align-middle"></i> Close
-                        </button>
-
-                        <!-- Form with dynamic method -->
-                        <form action="{{ $route }}" method="POST">
-                            @csrf
-                            @if($method !== 'post')
-                                @method($method)
-                            @endif
-                            <input type="hidden" name="id" id="delete-id" />
-                            <button type="submit" class="btn light btn-rounded btn-danger">
-                                <i class="fa fa-trash me-1"></i> Yes, delete
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        $('#deleteItem').on('show.bs.modal', function(event) {
-            var button = $(event.relatedTarget); // Button that triggered the modal
-            var title = button.data('title');    // Extract the title
-            var id = button.data('id');          // Extract the ID
-
-            var modal = $(this);
-            modal.find('.modal-title').text(title);
-            modal.find('#delete-id').val(id);
-        });
-    });
-</script>
+!odMbo!
+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

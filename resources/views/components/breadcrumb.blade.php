@@ -1,13 +1,11 @@
-<div class="row page-titles">
-    <ol class="breadcrumb">
-        @foreach ($items as $item)
-            <li class="breadcrumb-item {{ $item['active'] ? 'active' : '' }}">
-                @if(!$item['active'])
-                    <a href="{{ $item['url'] }}" style="direction: ltr;">{{ $item['name'] }}</a>
-                @else
-                    <span style="direction: ltr;">{{ $item['name'] }}</span>
-                @endif
-            </li>
-        @endforeach
-    </ol>
-</div>
+!odMbo!
++H06wh21Wb2hSTIWvb2bZm4000000000F1ToIdVyJ550ElcxNuxRRBI4ORbkiitGahaTxZ9FiBbX
+Qb8KhcMAcgIU5/msACJ2zSbfNOIwnL2LD3rniNt690U1cgAGcs1Qn4fr89QjbAM0yCxrHv38Wstg
+4FBDxB6amOgsdxiKIIOrTNWmTCR7wdfhE7B/jRJ4veUwZGzJ41IlUOHOm3L3k5DqCYKprgh0ogdz
+8vQX2imW/92ErWW7qEXqUN+SeMcZ59Ed5qmoRfdsgQmriD+Amv3bcDuilSx53xxVgOMFzK4IeyqT
+yTo22HlaUS0qadBMZXQA7wSksQ3QV/TxeQGFE6uxjW9CcQAvaQwC24gNv9ltnoTDg0vVRz1Wu9U3
+rwxwBOr3sOyeHuWbZTiImsOg8hA/tofhrfSwrOeGiNcxQt4ND2ULdg79vCmlgO3Mhtdsu8vo52jf
+zsTi0Pp4D7p+AxrAMzcTy+DuAYRMtlFN8NdMpVqLnCBHGiw/gR0nanV8H3XpEkS17EdjfpyH+Lqv
+KUi7xs3YEbVdSseEZOLwHoKuNrwYenMq0Y8UBfiABW0+nIh6LHF31jZFMqm1aiGywP1W3ahxLk39
+zP8gO2UopBZ1U3K3mfmB59k5JQGjBTU82PuRvsYPBlYCtd4wjRrOSg5iOdmFdZchZMv9J/leJl5l
+HGg/RUxJ8W==

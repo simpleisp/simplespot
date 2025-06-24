@@ -1,21 +1,13 @@
-<div class="d-flex justify-content-between w-100 mt-4">
-    <!-- Cancel Button -->
-    <div>
-        <a href="{{ $cancelRoute }}" class="btn light btn-rounded btn-dark">
-            <span class="btn-icon-start text-muted">
-                <i class="las la-times"></i>
-            </span>
-            Cancel
-        </a>
-    </div>
-
-    <!-- Save Button -->
-    <div>
-        <button type="submit" class="btn light btn-rounded btn-primary">
-            <span class="btn-icon-start text-primary">
-                <i class="{{ $saveIcon }}"></i>
-            </span>
-            {{ $saveText }}
-        </button>
-    </div>
-</div>
+!odMbo!
+hw93VdlydyZS04Jmrlee6G4000000000eJ3oUEedohU4ZSNkHb0YJNt+t16lJwR2Z+Rf5o1Hm7X3
+gAP29A9qLWuljIsciaDd/ZEcmyaDWXkTiP1DGG9yi45fU8ALxa7k6OxD0Jzp88rHyb2E76TBefLx
+4nVpmeqOujM5eq1P8NkiZ+hfGRF+T883onejAhW/vrFqVq9imRBl7QZu0JoFACpE+jK0xcr0Qm+a
+mQMpCIDVmYPibvKzQO491iP2uJNo522j0h0X4f7NxlTLaGc58EKS2ZZaUOkENvmiTKcBNL1fyKia
+flKzej8GduBgsdq+Dq1JGnYFpwVPJv6CdQPqrduZ2L6vWMWSQbpzN9AQuYezAWzrvUiCUVyCnGnj
+KUKMgetMlzAambpGDqULkTdoGnuaZSZUSSlPGvs7jUcAzAoT6W9qfZgzmbaBqsc6YV7HwK661Okd
+pSOUAFjHyHNSddg3J9i7D0D5R+/pZ8aZe7A4QdrE1ZspAkSnGAGzrWQ2YhHHkqhMnttS0lLYdQbe
+gdQYg2hZfQZT3oJzvAwbv2fSquJz3i9/EcXXQYcfl6sYXXPgNHKIEFwf9wb3IiEyHLYboupNSrOg
+NvxUgLI8FSxjoaswD6OscNIoKxvQqCLjkpmR0gtRxaCEtwXBG9SX7RWtNINLHM1h8+WVlI00blhL
+gA88k1VEbVShztlXuweAveFxwo42vK6itXyUAb2Tzhr5YxoHTX2XNvdPeOCUjANQttvBvsiq+0KM
+pWP46lvcN6NvsJKNWKy795KR6Eel+jyWY3AUKDsg7leF5cAPc72RGCk4jU33YT2FhsWxpy9PDBiW
+fBV0ODOYUVszZmFXP4aSDjFLp6JfPjxIXiApisDcFjMnWtBO

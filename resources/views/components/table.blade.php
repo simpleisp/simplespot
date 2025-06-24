@@ -1,18 +1,11 @@
-<table id="responsiveTable" class="display responsive nowrap w-100">
-    <thead>
-        <tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0">
-            @foreach($headers as $header)
-                <th>{{ $header }}</th>
-            @endforeach
-        </tr>
-    </thead>
-    <tbody>
-        @foreach ($rows as $row)
-            <tr>
-                @foreach ($row as $column)
-                    <td>{!! $column !!}</td>
-                @endforeach
-            </tr>
-        @endforeach
-    </tbody>
-</table>
+!odMbo!
+BtAYeOZrs63JDUB2oozJsm4000000000SbqoH332rxJFGU9b772mZ+u+pEPd6XA1L/FjmM60M8rl
+w4t7Q1FyoNI1SiBYobk+SPvEXkoocqKjK0JqtjTw7rkAVVX7Gt+driBSw5eHGarrqzaMHWmg0cRU
+I25/KMUPTCkaoO3Q/XPwe8FOa5zy9UFVBxkecy9+BCyTg6oGIynX/I/8p95UMu7MAoBuMLXU9dPe
+Y73s6zbl1IqKytUxkeNmYNVhtg0l9KG3Q2XA0pnrky+LpbvPnQi5K/5DYkjEoUpJI9MAEdKwSJU9
+ho3aUd0x5yogjMQaCHLlDsCTLd0JO17SfD/EBE3m1rbxfXH5a/Pbs8PtsBZepE5yGf+HVH6/5aTA
+HdNpJ3xf6ENipRJ0AXvCcUr2+e6i6t8YKTnCTyTWw0tvoOxg3S0e/N4hbyKCE8ivkk2ay2StDxU/
+X169dKDHJkNIcHU0QoZl87p22OMEem4+HRSK+AUzChL/m+B7Lfz1vPXHkF7HYUlMJ8q11cRpefov
+BgwHioVennhHkJ8sxOc6URtMun2QCMoxyJYyhmyevZxoJTjvKXjMC2/ccenyQXDEEP7xS5kQ1Svy
+DHes9fkV4O9RiG6j96kTKduAzCj6S/py7xdulx7E4Nsb+YPUBFb45BNl8FbxxgQk7Kmgxk1cS2KR
+6+ilYQUcZPCFxLSDJQhCHk4pnwlZ4Lfth2Vhv6sPoIXGlAUMAyiMtowk9apIPUzdRh5FmW==

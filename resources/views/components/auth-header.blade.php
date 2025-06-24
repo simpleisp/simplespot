@@ -1,12 +1,10 @@
-<div class="row">
-    <div class="col-lg-12">
-        <div class="text-center mt-sm-5 mb-4 text-white-50">
-            {{-- <div>
-                <a href="index" class="d-inline-block auth-logo">
-                    <img src="{{ URL::asset('assets/images/logo-light.png') }}" alt="" height="20">
-                </a>
-            </div> --}}
-            <p class="mt-3 fs-15 fw-medium">Empowering isp networks</p>
-        </div>
-    </div>
-</div>
+!odMbo!
+9UQU7Oe2wgrWaaQtn73hgW4000000000c2VR42p2PqKfXfjDHpd3IMiRguHXr9X95KFI8Na8oZHG
+wEEWoQjqH0LI7IGU2qOekJCNJmAssYmYxTQd1gfDpfBw8yipilxDPBY/LTb9IjmiOCWpbW9gTZs+
+9Em2Uea8jl7C0Yu8HVulOIgvp4521B3snv9gIH0BclqgMHedo6rHNBse/fi0dQ1nqyAOZaGiU9iv
+NsbmG31+VADaYQy8xB9Lj9RPKJ0QB4aM7CYsPMjDFjrfvRw1AGkkAIMgxGO3lk9HGSpDFIlkkQkq
+hdOj7ImOXpHz4HBx7lYC4LpGEQkXG836J1X8cLNaYjvICnCdys6M2TqmENOWhPvdukTi2pdGggSj
+RY8V64oRwrM1pwql84DRplbhLqvK37JA9H7lnkmheyVxAxbHvYl18BWaO8jXjJ9rL9FTcIVZtRAO
+2eRS2b+MDHLwpUIYOzl1++JY1x+H7VGEY+yCKC62S/8jEENnkaqB64QcdxPYbKJBvjOWedZteh5G
+riB/ZaTSM5DxUmfLWOdepg7NiZK8V/63bNrIIItUKzvGGdMpNdo+gVNq1cuz60cWFuuv0MTzdAVp
+3aFcF2ghkd3K2ta44zmcfVf8aIHrg4EwpvUulM/VvF89htd0
